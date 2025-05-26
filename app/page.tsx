@@ -34,7 +34,7 @@ export default function Home() {
                 height={90}
               />
             </div>
-            <p className="text-sm text-white text-center">
+            <p className="text-sm text-white text-center text-zinc-900">
               This link will take you to a portal page that links to different projects I’ve done on GitHub.
             </p>
           </a>
@@ -52,8 +52,8 @@ export default function Home() {
                 height={90}
               />
             </div>
-            <p className="text-sm text-center text-zinc-400">
-              Learn about Next.js in an interactive course with quizzes!
+            <p className="text-sm text-center text-zinc-400 text-zinc-900">
+              This link will take you to my Linkedin
             </p>
           </a>
         </div>
