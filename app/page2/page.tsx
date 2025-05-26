@@ -5,19 +5,19 @@ const projects = [
         name: "Java projects",
         url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/Java_Projects",
         description: "Java-based applications including desktop tools and algorithms.",
-        icon: "/java.png",
+        icon: "./java.png",
     },
     {
         name: "Python projects",
         url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/python_projects",
         description: "Scripts and tools for automation, analysis, and cybersecurity.",
-        icon: "/python.png",
+        icon: "./python.png",
     },
     {
         name: "C, C#, and C++",
         url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/c_projects",
         description: "System-level utilities and programs written in C-family languages.",
-        icon: "/C_icon.png",
+        icon: "./C_icon.png",
     },
     ];
 
@@ -26,7 +26,7 @@ export default function Page2() {
         <div className="relative min-h-screen">
         {/* Background Image */}
         <Image
-            src="/Background_page2.jpg" 
+            src="./Background_page2.jpg" 
             alt="Background"
             layout="fill"
             objectFit="cover"
