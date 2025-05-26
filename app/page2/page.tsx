@@ -26,7 +26,7 @@ export default function Page2() {
   return (
     <div
       className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/Background_page2.png')" }}
+      style={{ backgroundImage: "url('./Background_page2.png')" }}
     >
       <div className="w-full max-w-7xl text-white">
      <h1 className="text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-lg mb-10 text-center tracking-tight">
