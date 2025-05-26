@@ -24,7 +24,7 @@ export default function Home() {
           {/* Card 1: GitHub */}
           <a
             href=".\page2"
-            className="block p-6 bg-zinc-800 hover:bg-zinc-800 transition rounded-lg text-black"
+            className="block p-6 bg-zinc-800 hover:bg-zinc-800 hover:bg-zinc-700 hover:scale-105 transition rounded-lg text-black"
           >
             <div className="flex justify-center mb-4">
               <Image
@@ -42,7 +42,7 @@ export default function Home() {
           {/* Card 2: Learn (icon instead of text) */}
           <a
             href="https://www.linkedin.com/feed/"
-            className="block p-6 bg-zinc-800 hover:bg-zinc-800 transition rounded-lg text-black"
+            className="block p-6 bg-zinc-800 hover:bg-zinc-700 hover:scale-105 transition rounded-lg text-black"
           >
             <div className="flex justify-center mb-4">
               <Image
