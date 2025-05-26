@@ -7,7 +7,7 @@ export default function Home() {
       style={{ backgroundImage: "url('./Background image.png')" }}
     >
       {/* Main Content */}
-      <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start -mt-30">
+      <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start -mt-140">
         <div>
           <h1 className="text-7xl font-bold text-white text-center sm:text-left">
             Welcome to my online portfolio
@@ -24,7 +24,7 @@ export default function Home() {
           {/* Card 1: GitHub */}
           <a
             href=".\page2"
-            className="block p-6 bg-zinc-600 hover:bg-zinc-800 transition rounded-lg text-white"
+            className="w-full sm:w-110 p-6 bg-gray-300 rounded-lg hover:bg-zinc-800 transition"
           >
             <div className="flex justify-center mb-4">
               <Image
@@ -42,7 +42,7 @@ export default function Home() {
           {/* Card 2: Learn (icon instead of text) */}
           <a
             href="https://www.linkedin.com/feed/"
-            className="block p-6 bg-zinc-600 hover:bg-zinc-800 transition rounded-lg text-white"
+            className="w-full sm:w-110 p-6 bg-gray-300 rounded-lg hover:bg-zinc-800 transition"
           >
             <div className="flex justify-center mb-4">
               <Image

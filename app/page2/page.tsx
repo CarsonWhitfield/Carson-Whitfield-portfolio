@@ -17,7 +17,7 @@ const projects = [
     name: "C, C#, and C++",
     url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/c_projects",
     description: "System-level utilities and programs written in C-family languages.",
-    icon: "./c_icon.png",
+    icon: "./C_icon.png",
 },
 ];
 
