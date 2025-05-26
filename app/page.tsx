@@ -1,63 +1,61 @@
 import Image from "next/image";
 
-export default function Home() {
+const projects = [
+  {
+    name: "Java projects",
+    url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/Java_Projects",
+    description: "Java-based applications including desktop tools and algorithms.",
+    icon: "./java.png",
+  },
+  {
+    name: "Python projects",
+    url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/python_projects",
+    description: "Scripts and tools for automation, analysis, and cybersecurity.",
+    icon: "./python.png",
+  },
+  {
+    name: "C, C#, and C++",
+    url: "https://github.com/CarsonWhitfield/My-Projects/tree/main/c_projects",
+    description: "System-level utilities and programs written in C-family languages.",
+    icon: "./C_icon.png",
+  },
+];
+
+export default function Page2() {
   return (
     <div
-      className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center"
-      style={{ backgroundImage: "url('./Background image.png')" }}
+      className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('./Background_page2.png')" }}
     >
-      {/* Main Content */}
-      <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start -mt-140">
-        <div>
-          <h1 className="text-7xl font-bold text-white text-center sm:text-left">
-            Welcome to Carson Whitfield online portfolio
-          </h1>
-          <p className="text-2xl text-gray-300 leading-relaxed max-w-prose text-center sm:text-left">
-            “Be yourself; everyone else is already taken.” —Oscar Wilde
-          </p>
+      <div className="w-full max-w-7xl text-white">
+      <h1 className="text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-lg mb-10 text-center tracking-tight">
+        My GitHub Projects
+      </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <a
+              key={project.name}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-zinc-800 bg-opacity-90 hover:bg-zinc-700 hover:scale-105 transition-transform duration-300 ease-in-out rounded-2xl shadow-lg p-6 flex flex-col items-start gap-4"
+            >
+              <div className="flex items-center gap-3">
+                <Image
+                  src={project.icon}
+                  alt={`${project.name} icon`}
+                  width={32}
+                  height={32}
+                />
+                <h2 className="text-2xl font-semibold">{project.name}</h2>
+              </div>
+              <p className="text-zinc-400 leading-relaxed text-sm">
+                {project.description}
+              </p>
+            </a>
+          ))}
         </div>
-      </main>
-
-      {/* Footer Cards */}
-      <footer className="row-start-3 w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-white">
-          {/* Card 1: GitHub */}
-          <a
-            href=".\page2"
-            className="block p-6 bg-zinc-700 hover:bg-zinc-600 hover:scale-105 transition rounded-lg text-white"
-          >
-            <div className="flex justify-center mb-4">
-              <Image
-                src="./Github_icon.png"
-                alt="GitHub Icon"
-                width={90}
-                height={90}
-              />
-            </div>
-            <p className="text-sm text-white text-center">
-              This link will take you to a portal page that links to different projects I’ve done on GitHub.
-            </p>
-          </a>
-
-          {/* Card 2: Learn (icon instead of text) */}
-          <a
-            href="https://www.linkedin.com/feed/"
-            className="block p-6 bg-zinc-700 hover:bg-zinc-600 hover:scale-105 transition rounded-lg text-white"
-          >
-            <div className="flex justify-center mb-4">
-              <Image
-                src="./Linkedin_icon.png"
-                alt="Linkedin Icon"
-                width={90}
-                height={90}
-              />
-            </div>
-            <p className="text-sm text-center">
-              This link will take you to my Linkedin
-            </p>
-          </a>
-        </div>
-      </footer>
+      </div>
     </div>
   );
 }
