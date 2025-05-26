@@ -24,7 +24,7 @@ export default function Home() {
           {/* Card 1: GitHub */}
           <a
             href=".\page2"
-            className="block p-6 bg-zinc-800 hover:bg-zinc-800 hover:bg-zinc-700 hover:scale-105 transition rounded-lg text-black"
+            className="block p-6 bg-zinc-700 hover:bg-zinc-600 hover:scale-105 transition rounded-lg text-white"
           >
             <div className="flex justify-center mb-4">
               <Image
@@ -34,7 +34,7 @@ export default function Home() {
                 height={90}
               />
             </div>
-            <p className="text-sm text-white text-center text-zinc-900">
+            <p className="text-sm text-white text-center">
               This link will take you to a portal page that links to different projects I’ve done on GitHub.
             </p>
           </a>
@@ -42,7 +42,7 @@ export default function Home() {
           {/* Card 2: Learn (icon instead of text) */}
           <a
             href="https://www.linkedin.com/feed/"
-            className="block p-6 bg-zinc-800 hover:bg-zinc-700 hover:scale-105 transition rounded-lg text-black"
+            className="block p-6 bg-zinc-700 hover:bg-zinc-600 hover:scale-105 transition rounded-lg text-white"
           >
             <div className="flex justify-center mb-4">
               <Image
@@ -52,7 +52,7 @@ export default function Home() {
                 height={90}
               />
             </div>
-            <p className="text-sm text-center text-zinc-400 text-zinc-900">
+            <p className="text-sm text-center">
               This link will take you to my Linkedin
             </p>
           </a>
