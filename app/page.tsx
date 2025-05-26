@@ -7,7 +7,7 @@ export default function Home() {
       style={{ backgroundImage: "url('./Background image.png')" }}
     >
       {/* Main Content */}
-      <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start -mt-24">
+      <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start -mt-30">
         <div>
           <h1 className="text-7xl font-bold text-white text-center sm:text-left">
             Welcome to my online portfolio
