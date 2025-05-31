@@ -10,7 +10,7 @@ export default function Home() {
       <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start -mt-140">
         <div>
           <h1 className="text-7xl font-bold text-white text-center sm:text-left">
-            Welcome to Carson Whitfield online portfolio
+            Welcome to Carson Whitfield portfolio
           </h1>
           <p className="text-2xl text-gray-300 leading-relaxed max-w-prose text-center sm:text-left">
             “Be yourself; everyone else is already taken.” —Oscar Wilde
