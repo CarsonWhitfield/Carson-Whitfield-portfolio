@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Carson Whitfeild Portfolio",
   description: "Carson Whitfield Profolio and github protal",
+  icons: {
+    icon: "./favicon.ico", 
+  },
 };
 
 export default function RootLayout({
