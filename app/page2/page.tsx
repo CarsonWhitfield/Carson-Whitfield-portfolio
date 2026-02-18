@@ -6,15 +6,15 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     name: "CS Projects",
-    url: "../CS_projects",
+    url: "./../CS_projects",
     description: "System-level utilities and programs written in C-family languages.",
-    icon: "/icons/C_icon-light.png",
+    icon: "./icons/C_icon-light.png",
   },
   { 
     name: "IT Projects",
-    url: "../IT_projects/page3",
+    url: "./../IT_projects/page3",
     description: "Networking and infrastructure labs, including OSI Model, TCP/IP Suite, STP, OSPF, and more",
-    icon: "/icons/IT-icon.png", 
+    icon: "./icons/IT-icon.png", 
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Page2() {
       </div>
       <div className="mt-12">
       <Link
-        href="/"
+        href="./"
         className="bg-zinc-800 dark:bg-zinc-300 bg-opacity-90 hover:bg-zinc-700 dark:hover:bg-zinc-700 hover:scale-105 transition-transform duration-300 ease-in-out rounded-2xl shadow-lg p-6 flex flex-col items-start gap-4 text-gray-200 dark:text-gray-900 font-medium"
       >
         ← Back to Home

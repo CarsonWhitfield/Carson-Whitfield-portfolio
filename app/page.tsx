@@ -5,7 +5,7 @@ import { ThemeToggle } from "./Theme";
 export default function Home() {
   return (
     <div
-      className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center bg-[url('/Background/Background_image.png')] dark:bg-[url('/Background/Background-light.png')]"
+      className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center bg-[url('./Background/Background_image.png')] dark:bg-[url('./Background/Background-light.png')]"
       
     >
       {/* Button for dark and light mode */}
@@ -30,12 +30,12 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-white">
           {/* Card 1: GitHub */}
           <a
-            href="\page2"
+            href=".\page2"
             className="block p-6 dark:bg-zinc-300  bg-zinc-700 dark:hover:bg-zinc-600 hover:bg-zinc-600 hover:scale-105 transition rounded-lg text-white"
           >
             <div className="flex justify-center mb-4">
               <Image
-                src="/Github_icon.png"
+                src="./Github_icon.png"
                 alt="GitHub Icon"
                 width={90}
                 height={90}
@@ -53,7 +53,7 @@ export default function Home() {
           >
             <div className="flex justify-center mb-4">
               <Image
-                src="/icons/Linkedin_icon.png"
+                src="./icons/Linkedin_icon.png"
                 alt="Linkedin Icon"
                 width={90}
                 height={90}
