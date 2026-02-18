@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     name: "CS Projects",
-    url: "./../CS_projects",
+    url: "../CS_projects",
     description: "System-level utilities and programs written in C-family languages.",
-    icon: "./icons/C_icon-light.png",
+    icon: "/icons/C_icon-light.png",
   },
   { 
     name: "IT Projects",
-    url: "./../IT_projects/page3",
+    url: "../IT_projects/page3",
     description: "Networking and infrastructure labs, including OSI Model, TCP/IP Suite, STP, OSPF, and more",
     icon: "./icons/IT-icon.png", 
   },
@@ -21,7 +21,7 @@ const projects = [
 export default function Page2() {
   return (
     <div
-      className="min-h-screen p-8 pb-20 sm:p-20 font-geist bg-cover bg-center bg-no-repeat flex flex-col items-center justify-start bg-[url('/Background/Background_page2.png')] dark:bg-[url('/Background/Background-pag2-light.png')]"
+      className="min-h-screen p-8 pb-20 sm:p-20 font-geist bg-cover bg-center bg-no-repeat flex flex-col items-center justify-start bg-[url('./Background/Background_page2.png')] dark:bg-[url('./Background/Background-pag2-light.png')]"
     >
 
        {/* Button for dark and light mode */}
