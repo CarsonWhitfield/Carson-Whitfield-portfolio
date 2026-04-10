@@ -8,14 +8,10 @@ const basePath = process.env.NODE_ENV === "production"
 export default function Home() {
   return (
     <div
-<<<<<<< HEAD
       className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center"
       style={{
         backgroundImage: `url('${basePath}/Background/Background-light.png')`,
       }}
-=======
-      className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist bg-cover bg-center bg-[url('./Background/Background_image.png')] dark:bg-[url('./Background/Background-light.png')]"
->>>>>>> 91a2b1e43418a37393853acbee75888c9d369ed3
     >
       <div className="fixed top-4 right-4 z-50">
         <ThemeToggle />
