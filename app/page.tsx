@@ -8,17 +8,32 @@ const basePath =
 
 export default function Home() {
   return (
-    <div
-      className="min-h-screen flex flex-col justify-between p-8 sm:p-20 bg-cover bg-center"
-      style={{
-        backgroundImage: `url('${basePath}/Background/Background-light.png')`,
-      }}
-    >
+    <div className="relative min-h-screen flex flex-col justify-between p-8 sm:p-20 overflow-hidden">
+      {/* Light background */}
+      <Image
+        src={`${basePath}/Background/Background-light.png`}
+        alt="Light background"
+        fill
+        priority
+        unoptimized
+        className="object-cover object-center -z-20 dark:hidden"
+      />
+
+      {/* Dark background */}
+      <Image
+        src={`${basePath}/Background/Background_image.png`}
+        alt="Dark background"
+        fill
+        priority
+        unoptimized
+        className="hidden object-cover object-center -z-20 dark:block"
+      />
+
       <div className="fixed top-4 right-4 z-50">
         <ThemeToggle />
       </div>
 
-      <main className="flex-1 flex items-center">
+      <main className="flex-1 flex items-center relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl sm:text-7xl font-bold text-black dark:text-white text-left">
             Welcome to Carson Whitfield portfolio
@@ -29,7 +44,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="w-full mt-12">
+      <footer className="w-full mt-12 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl">
           <a
             href={`${basePath}/page2`}
@@ -51,20 +66,20 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
             className="block p-6 rounded-lg bg-zinc-700 text-white hover:bg-zinc-600 transition"
           >
             <div className="flex justify-center mb-4">
               <Image
                 src={`${basePath}/icons/Linkedin_icon.png`}
-                alt="Linkedin Icon"
+                alt="LinkedIn Icon"
                 width={90}
                 height={90}
                 unoptimized
               />
             </div>
             <p className="text-sm text-center">
-              This link will take you to my Linkedin
+              This link will take you to my LinkedIn
             </p>
           </a>
         </div>
