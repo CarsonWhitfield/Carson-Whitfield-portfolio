@@ -30,7 +30,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-white">
           {/* Card 1: GitHub */}
           <a
-            href="./page2"
+            href="\page2"
             className="block p-6 dark:bg-zinc-300  bg-zinc-700 dark:hover:bg-zinc-600 hover:bg-zinc-600 hover:scale-105 transition rounded-lg text-white"
           >
             <div className="flex justify-center mb-4">
