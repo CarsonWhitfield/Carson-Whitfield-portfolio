@@ -1,38 +1,36 @@
 import Image from "next/image";
 import { ThemeToggle } from "./Theme";
 
-const basePath =
-  process.env.NODE_ENV === "production"
-    ? "/Carson-Whitfield-portfolio"
-    : "";
-
 export default function Home() {
   return (
     <div className="relative min-h-screen flex flex-col justify-between p-8 sm:p-20 overflow-hidden">
-      {/* Light background */}
-      <Image
-        src={`${basePath}/Background/Background-light.png`}
-        alt="Light background"
-        fill
-        priority
-        unoptimized
-        className="object-cover object-center -z-20 dark:hidden"
-      />
+      
+      {/*  BACKGROUND WRAPPER */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/Background/Background-light.png"
+          alt="Light background"
+          fill
+          priority
+          unoptimized
+          className="object-cover object-center dark:hidden"
+        />
+        <Image
+          src="/Background/Background_image.png"
+          alt="Dark background"
+          fill
+          priority
+          unoptimized
+          className="hidden object-cover object-center dark:block"
+        />
+      </div>
 
-      {/* Dark background */}
-      <Image
-        src={`${basePath}/Background/Background_image.png`}
-        alt="Dark background"
-        fill
-        priority
-        unoptimized
-        className="hidden object-cover object-center -z-20 dark:block"
-      />
-
+      {/* Toggle */}
       <div className="fixed top-4 right-4 z-50">
         <ThemeToggle />
       </div>
 
+      {/* Main Content */}
       <main className="flex-1 flex items-center relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl sm:text-7xl font-bold text-black dark:text-white text-left">
@@ -44,15 +42,17 @@ export default function Home() {
         </div>
       </main>
 
+      {/* Footer */}
       <footer className="w-full mt-12 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl">
+          
           <a
-            href={`${basePath}/page2`}
+            href="/page2"
             className="block p-6 rounded-lg bg-zinc-700 text-white hover:bg-zinc-600 transition"
           >
             <div className="flex justify-center mb-4">
               <Image
-                src={`${basePath}/Github_icon.png`}
+                src="/Github_icon.png"
                 alt="GitHub Icon"
                 width={90}
                 height={90}
@@ -71,7 +71,7 @@ export default function Home() {
           >
             <div className="flex justify-center mb-4">
               <Image
-                src={`${basePath}/icons/Linkedin_icon.png`}
+                src="/icons/Linkedin_icon.png"
                 alt="LinkedIn Icon"
                 width={90}
                 height={90}
@@ -82,6 +82,7 @@ export default function Home() {
               This link will take you to my LinkedIn
             </p>
           </a>
+
         </div>
       </footer>
     </div>
