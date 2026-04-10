@@ -7,7 +7,7 @@ export default function Home() {
       {/* Background */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <Image
-          src="/Background/Background-light.png"
+          src="./Background/Background-light.png"
           alt="Light background"
           fill
           priority
@@ -15,7 +15,7 @@ export default function Home() {
           className="object-cover object-center dark:hidden"
         />
         <Image
-          src="/Background/Background_image.png"
+          src="./Background/Background_image.png"
           alt="Dark background"
           fill
           priority
